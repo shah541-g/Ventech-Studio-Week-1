@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <!-- For getting proper layout look uncomment line number 8 -->
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <main>
+      <section id="registration-form-section">
+        <h1>Create Your Account</h1>
+        <p>Please fill in the details to register</p>
+        <form action="">
+          <fieldset>
+            <legend>Create Account</legend>
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              name=""
+              id="fullName"
+              pattern="[A-Za-z]*"
+              required
+            />
+            <label for="userName">User Name</label>
+            <input type="text" name="" id="userName" required />
+            <label for="email">Email Address</label>
+            <input type="email" name="" id="email" required />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name=""
+              id="password"
+              minlength="8"
+              required
+            />
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              name=""
+              id="confirmPassword"
+              minlength="8"
+              required
+            />
+            <label for="phoneNumber">Phone Number</label>
+            <input
+              type="tel"
+              name=""
+              id="phoneNumber"
+              pattern="[0-9]{11}"
+              required
+            />
+            <label for="dob">Date Of Birth</label>
+            <input type="date" name="" id="dob" max="2026-07-13" required />
+            <label for="gender">Gender</label>
+            <select name="" id="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <input type="checkbox" name="" id="check-me" />
+            <label for="check-me"
+              >I agree to the <a href="#">Terms and Conditions</a> and
+              <a href="#">Privacy Policy</a></label
+            >
+            <button>Register</button>
+          </fieldset>
+        </form>
+        <p>Already have an account? <a href="#">Login</a></p>
+      </section>
+    </main>
+  </body>
+</html>
