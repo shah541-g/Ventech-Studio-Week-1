@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ur-Latn">
+<head>
+<meta charset="UTF-8">
+<title>HTML, Web & Internet — Final Recall Question Paper</title>
+<style>
+  :root{
+    --bg:#0b0f19;
+    --card:#111726;
+    --card-border:#1f2937;
+    --text:#c9d1e0;
+    --muted:#8b93a7;
+    --accent:#38bdf8;
+    --accent2:#a78bfa;
+    --code-bg:#0d1420;
+    --answer-bg:#0f1f17;
+    --answer-border:#1f3d2c;
+  }
+  *{box-sizing:border-box;}
+  body{
+    background:linear-gradient(160deg,#0b0f19,#131a2b 60%,#0b0f19);
+    color:var(--text);
+    font-family:'Segoe UI',Tahoma,Arial,sans-serif;
+    margin:0;
+    padding:40px 18px 100px;
+    line-height:1.65;
+  }
+  .wrap{max-width:880px;margin:0 auto;}
+  .title-block{text-align:center;margin-bottom:50px;}
+  .eyebrow{
+    color:var(--accent);
+    letter-spacing:3px;
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+  }
+  h1.maintitle{
+    font-size:38px;
+    margin:14px 0 6px;
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .subtitle{color:var(--muted);font-size:15px;max-width:640px;margin:0 auto;}
+  .instructions{
+    background:var(--card);
+    border:1px solid var(--card-border);
+    border-radius:12px;
+    padding:20px 24px;
+    margin:30px 0 46px;
+  }
+  .instructions h3{margin-top:0;color:var(--accent);font-size:14px;letter-spacing:1px;text-transform:uppercase;}
+  .instructions ul{margin:8px 0 0;padding-left:20px;}
+  .instructions li{margin-bottom:6px;font-size:14.5px;}
+
+  .part-header{
+    margin:60px 0 24px;
+    padding-bottom:10px;
+    border-bottom:1px solid var(--card-border);
+  }
+  .part-label{color:var(--accent2);font-size:12px;letter-spacing:2px;font-weight:700;text-transform:uppercase;}
+  .part-title{font-size:26px;color:#e5e9f2;margin:6px 0 0;}
+
+  .topic{
+    background:var(--card);
+    border:1px solid var(--card-border);
+    border-radius:12px;
+    padding:20px 24px;
+    margin-bottom:20px;
+  }
+  .topic h4{
+    margin:0 0 14px;
+    font-size:15px;
+    color:var(--accent);
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .topic h4 .num{
+    background:rgba(56,189,248,0.15);
+    color:var(--accent);
+    border-radius:6px;
+    padding:2px 9px;
+    font-size:12px;
+  }
+  .q{margin:0 0 14px 0;padding-left:0;}
+  .q:last-child{margin-bottom:0;}
+  .qtag{
+    display:inline-block;
+    font-size:10.5px;
+    font-weight:700;
+    letter-spacing:0.5px;
+    padding:2px 8px;
+    border-radius:5px;
+    margin-right:8px;
+    text-transform:uppercase;
+    vertical-align:middle;
+  }
+  .qtag.fill{background:rgba(167,139,250,0.15);color:var(--accent2);}
+  .qtag.tf{background:rgba(56,189,248,0.15);color:var(--accent);}
+  .qtag.mcq{background:rgba(251,191,36,0.15);color:#fbbf24;}
+  .qtag.short{background:rgba(52,211,153,0.15);color:#34d399;}
+  .qtag.code{background:rgba(248,113,113,0.15);color:#f87171;}
+  .qtag.compare{background:rgba(96,165,250,0.15);color:#60a5fa;}
+  .qtext{font-size:14.5px;}
+  .options{margin:6px 0 0 0;padding-left:22px;color:var(--muted);font-size:14px;}
+  .options li{margin-bottom:3px;}
+  code, .inline-code{
+    background:var(--code-bg);
+    border:1px solid var(--card-border);
+    padding:1px 6px;
+    border-radius:4px;
+    font-family:'Consolas',monospace;
+    font-size:13px;
+    color:#93c5fd;
+  }
+
+  details.answers{
+    margin-top:70px;
+    background:var(--answer-bg);
+    border:1px solid var(--answer-border);
+    border-radius:12px;
+    padding:22px 26px;
+  }
+  details.answers > summary{
+    cursor:pointer;
+    font-size:16px;
+    font-weight:700;
+    color:#34d399;
+    letter-spacing:0.5px;
+  }
+  .ans-part-title{
+    color:var(--accent2);
+    font-size:14px;
+    margin:26px 0 10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+  .ans-item{font-size:13.8px;margin-bottom:8px;color:var(--text);}
+  .ans-item b{color:#34d399;}
+
+  .footer-note{
+    text-align:center;
+    color:var(--muted);
+    font-size:13px;
+    margin-top:60px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="title-block">
+    <div class="eyebrow">Draft Academy · Active Recall Paper</div>
+    <h1 class="maintitle">HTML, Web &amp; Internet — Final Question Paper</h1>
+    <p class="subtitle">Saare 34 topics cover — HTML basics se lekar DNS deep dive tak. Mixed question types taake har concept alag angle se yaad rahe: fill-in-blank, true/false, MCQ, short answer, code recall aur compare/contrast.</p>
+  </div>
+
+  <div class="instructions">
+    <h3>Kaise Attempt Karein</h3>
+    <ul>
+      <li>Pehle bina notes dekhe khud se jawab dene ki koshish karein — yehi active recall hai jo memory strong karta hai.</li>
+      <li>Har topic ke 2-3 questions hain, mixed formats mein (tags niche har question par diye hain).</li>
+      <li>Answer key sab se neeche ek collapsible section mein hai — sirf self-check ke liye kholein, pehle khud attempt karein.</li>
+      <li>Agar koi jawab yaad na aaye, us topic number ko note kar lein aur wapis original notes mein revise karein.</li>
+    </ul>
+  </div>
+
+  <!-- ============ PART 1 ============ -->
+  <div class="part-header">
+    <div class="part-label">Part 1 · HTML Foundations</div>
+    <div class="part-title">Topics 1–16</div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">1</span> HTML Kya Hai — Introduction</h4>
+    <div class="q"><span class="qtag fill">Fill Blank</span><span class="qtext">HTML ka full form ______ hai.</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">HTML actually website ka kya decide karta hai — sirf appearance ya kuch aur bhi?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">2</span> Text Editor Choose Karna</h4>
+    <div class="q"><span class="qtag tf">True/False</span><span class="qtext">Microsoft Word HTML likhne ke liye ek acha choice hai. (True/False)</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Beginners ke liye Windows aur Mac par kaunse simple editors recommend kiye gaye hain, aur unka fayda kya hai?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">3</span> Pehli HTML File Banana (Skeleton)</h4>
+    <div class="q"><span class="qtag code">Code Recall</span><span class="qtext">Basic HTML skeleton likhein: <code>&lt;!DOCTYPE html&gt;</code> se shuru karke <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code>, <code>&lt;body&gt;</code> tags ke sath.</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext"><code>index.html</code> file ka naam special kyun hai?</span></div>
+    <div class="q"><span class="qtag fill">Fill Blank</span><span class="qtext">Agar <code>&lt;body&gt;</code> ke andar <code>&lt;p&gt;</code> tag daalein, to wo <code>&lt;html&gt;</code> ka ______ kehlayega (parent/child/grandchild mein se).</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">4</span> Basic HTML Tags</h4>
+    <div class="q"><span class="qtag mcq">MCQ</span><span class="qtext">Konsa tag "subscript" ke liye use hota hai jaise H2O mein "2"?
+      <ul class="options"><li>A) <code>&lt;sup&gt;</code></li><li>B) <code>&lt;sub&gt;</code></li><li>C) <code>&lt;small&gt;</code></li><li>D) <code>&lt;big&gt;</code></li></ul>
+    </span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">HTML whitespace (blank lines/spaces) ko kaise treat karta hai? Layout kis cheez se decide hoti hai?</span></div>
+    <div class="q"><span class="qtag fill">Fill Blank</span><span class="qtext"><code>h1</code> se <code>h6</code> tak, ______ sab se bara heading hai aur ______ sab se chota.</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">5</span> Comments</h4>
+    <div class="q"><span class="qtag code">Code Recall</span><span class="qtext">Ek HTML comment likhein jo "TODO: fix navbar" kahe.</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Comments ke do main use-cases kya hain?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">6</span> Styles aur Colors</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Agar body ka background-color blue ho aur ek <code>&lt;p&gt;</code> ka apna background-color red ho, to paragraph ka background konsa dikhega, aur kyun?</span></div>
+    <div class="q"><span class="qtag fill">Fill Blank</span><span class="qtext">Poora styling system jise ye ek basic intro hai, uska naam ______ hai.</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">7</span> Layout Tags (Structure)</h4>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext"><code>&lt;section&gt;</code> aur <code>&lt;aside&gt;</code> mein kya farq hai?</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Semantic layout tags (header/main/footer etc) generic <code>&lt;div&gt;</code> se behtar kyun hain? Do reasons dein.</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">8</span> Links (Anchor Tag)</h4>
+    <div class="q"><span class="qtag code">Code Recall</span><span class="qtext">Ek link likhein jo Google ko naye tab mein khole.</span></div>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext">Absolute URL aur relative URL mein farq batayein, aur har ek kab use hota hai.</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">9</span> Images</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext"><code>alt</code> attribute ka kaam kya hai, aur ye hamesha kyun add karna chahiye?</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Agar original image 300×200 hai (3:2 ratio) aur aap ise resize kar rahe hain, to width/height set karte waqt kya dhyan rakhna zaroori hai?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">10</span> Videos</h4>
+    <div class="q"><span class="qtag fill">Fill Blank</span><span class="qtext">Video ke play hone se pehle jo thumbnail dikhti hai, wo ______ attribute se set hoti hai.</span></div>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext">Local video embed karne (<code>&lt;video&gt;</code>) aur YouTube video embed karne (<code>&lt;iframe&gt;</code>) mein basic farq kya hai?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">11</span> Lists</h4>
+    <div class="q"><span class="qtag mcq">MCQ</span><span class="qtext">Ordered list mein <code>type="i"</code> dene se numbering kaisi hogi?
+      <ul class="options"><li>A) 1, 2, 3</li><li>B) A, B, C</li><li>C) i, ii, iii</li><li>D) I, II, III</li></ul>
+    </span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Description list (<code>&lt;dl&gt;</code>) mein <code>&lt;dt&gt;</code> aur <code>&lt;dd&gt;</code> ka kya kaam hai?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">12</span> Tables</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext"><code>colspan="2"</code> kisi <code>&lt;td&gt;</code> par lagane se kya hota hai?</span></div>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext"><code>&lt;th&gt;</code> aur <code>&lt;td&gt;</code> mein farq batayein.</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">13</span> Containers — Div aur Span</h4>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext">Block aur inline elements mein farq samjhayein, aur <code>&lt;div&gt;</code>/<code>&lt;span&gt;</code> mein se konsa kaunsi category mein aata hai.</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext"><code>&lt;div&gt;</code> generally kis maqsad ke liye use hota hai jabke <code>&lt;span&gt;</code> kis ke liye?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">14</span> Input Tags aur Forms</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Sirf HTML se input elements banana kyun functional nahi hota? Kya cheez chahiye hoti hai?</span></div>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext">Checkbox aur radio button mein behavior ka farq kya hai?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">15</span> iFrames</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Kuch bari websites (jaise Amazon) apni site ko iframe mein embed hone se kyun block karti hain?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">16</span> Meta Tags (SEO)</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext"><code>viewport</code> meta tag itna important kyun hai?</span></div>
+    <div class="q"><span class="qtag fill">Fill Blank</span><span class="qtext">Meta description ki ideal length ______ characters ke around honi chahiye.</span></div>
+  </div>
+
+  <!-- ============ PART 2 ============ -->
+  <div class="part-header">
+    <div class="part-label">Part 2 · Extended Topics</div>
+    <div class="part-title">Topics 17–28</div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">17</span> HTML vs CSS vs JS — Roles Compared</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Simple ek-line yaad rakhne ka tareeqa batayein: HTML = ?, CSS = ?, JS = ?</span></div>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext">Browser HTML ko kis object model mein aur CSS ko kis object model mein convert karta hai?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">18</span> Label, Select aur Button Tags</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext"><code>&lt;label&gt;</code> ka <code>for</code> attribute kis se match hona chahiye, aur is se kya practical fayda hota hai?</span></div>
+    <div class="q"><span class="qtag mcq">MCQ</span><span class="qtext">Konsa button type kuch bhi submit nahi karta, sirf JavaScript se attach hone ke liye hota hai?
+      <ul class="options"><li>A) submit</li><li>B) reset</li><li>C) button</li><li>D) select</li></ul>
+    </span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">19</span> Native Form Validation Attributes</h4>
+    <div class="q"><span class="qtag code">Code Recall</span><span class="qtext">Ek email input likhein jo required ho.</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Client-side validation (required, pattern, etc) kaafi kyun nahi hoti? Server-side validation kyun bhi zaroori hai?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">20</span> Tables — Kab Use Karni Chahiye</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Layout ke liye tables use karna accessibility aur SEO ke liye bura kyun hai?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">21</span> Accessibility Basics</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">"Landmarks" kya hote hain aur screen reader users inhe kaise use karte hain?</span></div>
+    <div class="q"><span class="qtag fill">Fill Blank</span><span class="qtext">Quick accessibility checklist: har image pe ______, har input pe associated ______, headings ______ mein.</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">22</span> How the Web Works — Browser, DNS, HTTP</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">DNS ko "phone book" kyun kaha jata hai? Ek line mein samjhayein.</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Ek HTTP request ke 4 main parts kya hote hain?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">23</span> How the Web Works — HTTPS, JSON, WebSockets</h4>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext">Normal request/response pattern aur WebSockets mein basic farq kya hai?</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Mobile apps HTML ki jagah kya mangte hain server se?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">24</span> How the Internet Works — LAN, Switch, Router</h4>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext">Switch aur Router ke kaam mein farq batayein.</span></div>
+    <div class="q"><span class="qtag fill">Fill Blank</span><span class="qtext">Wireless version of a switch ______ kehlata hai.</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">25</span> How the Internet Works — Packets aur Internet ki Structure</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Internet ko sirf ek bara router se kyun nahi banaya jata — 3 reasons dein.</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Continents ke darmiyan internet traffic zyada tar kaise transfer hota hai?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">26</span> How the Internet Works — WAN aur VPN</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">VPN mein "tunneling" ka concept kya hai? Ek analogy ke sath samjhayein.</span></div>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext">Private WAN aur Public WAN (VPN) mein security aur cost ka farq kya hai?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">27</span> How the Internet Works — ISP Hierarchy aur Peering</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Local, Regional aur Global ISP mein farq batayein.</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">"Peering" kya hai aur Google jaisi companies ise kyun use karti hain?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">28</span> How the Browser Works — Rendering Engine</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Raw bytes se DOM banne tak ke steps sequence mein likhein (5 steps).</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">JavaScript rendering ko "block" kyun kar sakti hai, aur is problem ka modern solution kya hai?</span></div>
+  </div>
+
+  <!-- ============ PART 3 ============ -->
+  <div class="part-header">
+    <div class="part-label">Part 3 · Protocols Deep Dive</div>
+    <div class="part-title">Topics 29–34</div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">29</span> Internet Protocols — TCP/IP, Ports aur Sockets</h4>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext">TCP aur UDP mein farq batayein — konsa reliable hai aur konsa fast?</span></div>
+    <div class="q"><span class="qtag fill">Fill Blank</span><span class="qtext">Socket = ______ + ______ ka combination hota hai.</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Port 80 aur port 443 kis-kis ke liye default hain?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">30</span> SSL/TLS — Encryption, Certificates aur Handshake</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">SSL/TLS ke teen core concepts (Certificate, Handshake, Encryption) mein se har ek ka kaam ek line mein batayein.</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Certificate Authority ka role kya hota hai?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">31</span> HTTP Ki History — 0.9 se HTTP/1.1 Tak</h4>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext">HTTP/1.0 aur HTTP/1.1 mein sabse bara improvement (persistent connections) kya solve karta hai?</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">HTTP/0.9 mein kaunsa method available tha, aur kya missing tha (headers, status codes)?</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">HTTP/1.1 ka "head-of-line blocking" masla kya tha?</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">32</span> HTTP Ki History — SPDY aur HTTP/2</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">SPDY ka core idea kya tha — bandwidth vs latency ke baare mein?</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">HTTP/2 ki "Multiplexing" feature kya solve karti hai?</span></div>
+    <div class="q"><span class="qtag tf">True/False</span><span class="qtext">HTTP/2 ki official spec mein encryption mandatory hai, lekin practically har browser sirf TLS ke sath hi support karta hai. (True/False)</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">33</span> DNS Deep Dive — Nameservers aur Resolution Process</h4>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">Library analogy use karke 4 DNS server types (Recursor, Root, TLD, Authoritative) ka kaam batayein.</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">8-step DNS lookup process ko apne alfaz mein sequence se likhein.</span></div>
+  </div>
+
+  <div class="topic">
+    <h4><span class="num">34</span> DNS Deep Dive — Query Types aur Caching</h4>
+    <div class="q"><span class="qtag compare">Compare</span><span class="qtext">Recursive query aur Iterative query mein farq batayein.</span></div>
+    <div class="q"><span class="qtag short">Short</span><span class="qtext">DNS caching kitne levels par hoti hai? Naam batayein.</span></div>
+    <div class="q"><span class="qtag fill">Fill Blank</span><span class="qtext">TTL ka full form ______ hai, jo batata hai record kitni der cache mein reh sakta hai.</span></div>
+  </div>
+
+  <!-- ============ ANSWER KEY ============ -->
+  <details class="answers">
+    <summary>Answer Key Kholein (sirf self-check ke liye — pehle khud attempt karein)</summary>
+
+    <div class="ans-part-title">Part 1</div>
+    <div class="ans-item"><b>1.</b> HyperText Markup Language. HTML sirf structure/layout nahi, poori website ka look/feel bhi decide karta hai.</div>
+    <div class="ans-item"><b>2.</b> False — word processors HTML ke liye overkill hain. Windows→Notepad, Mac→TextEdit, jo aapko fundamentals par focus karne dete hain kyunke har tag khud type karna padta hai.</div>
+    <div class="ans-item"><b>3.</b> <code>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;My Site&lt;/title&gt;&lt;/head&gt;&lt;body&gt;Hello&lt;/body&gt;&lt;/html&gt;</code>. index.html special hai kyunke browser ise root folder mein home page samajhta hai. <code>&lt;p&gt;</code>, body ke andar hone ki wajah se html ka grandchild hoga.</div>
+    <div class="ans-item"><b>4.</b> B) <code>&lt;sub&gt;</code>. HTML whitespace ignore karta hai — layout tags ke order se decide hoti hai. <code>h1</code> sab se bara, <code>h6</code> sab se chota.</div>
+    <div class="ans-item"><b>5.</b> <code>&lt;!-- TODO: fix navbar --&gt;</code>. Use cases: notes/reminders chorna, aur code temporarily disable (comment-out) karna.</div>
+    <div class="ans-item"><b>6.</b> Paragraph ka apna red background dikhega kyunke child styling parent styling ko override karti hai. Poore system ka naam CSS (Cascading Style Sheets).</div>
+    <div class="ans-item"><b>7.</b> Section, article/page ko chote logical parts mein baantne ke liye; aside content jo main content se direct related nahi (jaise ad). Semantic tags readability/organization aur SEO dono ke liye behtar hain.</div>
+    <div class="ans-item"><b>8.</b> <code>&lt;a href="https://google.com" target="_blank"&gt;Google&lt;/a&gt;</code>. Absolute URL doosri websites ke liye (poora address), relative URL apni hi site ke andar doosre pages ke liye.</div>
+    <div class="ans-item"><b>9.</b> Alt text image load na hone par backup text dikhata hai — accessibility ke liye zaroori. Resize karte waqt original aspect ratio (3:2) maintain karna zaroori hai warna image stretch/squeeze hogi.</div>
+    <div class="ans-item"><b>10.</b> poster attribute. Local video <code>&lt;video&gt;</code> tag se file directly embed karti hai; YouTube embed <code>&lt;iframe&gt;</code> se YouTube ke apne player ke sath aata hai.</div>
+    <div class="ans-item"><b>11.</b> C) i, ii, iii. <code>&lt;dt&gt;</code> = description term (item), <code>&lt;dd&gt;</code> = uski explanation/detail.</div>
+    <div class="ans-item"><b>12.</b> colspan="2" ek td ko 2 columns ki jagah lene deta hai, baaki entries shift ho jati hain. th = header (bold), td = actual data.</div>
+    <div class="ans-item"><b>13.</b> Block = poori width leta hai, agla element neeche jata hai (div); Inline = sirf zaroori space leta hai, sath rehta hai (span). Div overall containers ke liye, span chote inline text pieces ke liye.</div>
+    <div class="ans-item"><b>14.</b> JavaScript chahiye hoti hai inputs ko functional banane ke liye — HTML sirf UI define karta hai. Checkbox: multiple options select ho sakte hain; Radio (same name): sirf ek option select ho sakta hai.</div>
+    <div class="ans-item"><b>15.</b> Security ke liye — koi malicious website unki site ko iframe mein daal kar phishing-type attack kar sakti hai.</div>
+    <div class="ans-item"><b>16.</b> Viewport meta tag mobile devices par website sahi display hone ke liye zaroori hai, warna site zoomed-out/desktop version mein dikhegi. Ideal length ~160 characters.</div>
+
+    <div class="ans-part-title">Part 2</div>
+    <div class="ans-item"><b>17.</b> HTML = kya hai (structure), CSS = kaisa dikhta hai (presentation), JS = kya karta hai (behavior). HTML→DOM, CSS→CSSOM.</div>
+    <div class="ans-item"><b>18.</b> Label ka for id se match hona chahiye — is se label pe click karne se input focus/select ho jata hai (accessibility ke liye important). B) button type="button".</div>
+    <div class="ans-item"><b>19.</b> <code>&lt;input type="email" required&gt;</code>. Client-side validation JavaScript se bypass ki ja sakti hai, is liye server-side validation security ke liye zaroori hai.</div>
+    <div class="ans-item"><b>20.</b> Screen readers layout-only tables ko "data table" samajh kar confusing tareeqe se parhte hain, jo actual structure ko misrepresent karta hai aur SEO ke liye bhi bura hai.</div>
+    <div class="ans-item"><b>21.</b> Landmarks semantic tags (header/nav/main/aside/footer) hain jo screen reader users ko shortcut key se seedha "next landmark" (jaise main content) pe jump karne dete hain. Checklist: alt text, label, hierarchy mein.</div>
+    <div class="ans-item"><b>22.</b> DNS domain name (jo insaan yaad rakhte hain) ko IP address (number) mein convert karta hai, bilkul phone book ki tarah naam se number dhoondna. Request parts: URL, method, headers, body.</div>
+    <div class="ans-item"><b>23.</b> Normal pattern mein client hamesha pehle request bhejta hai; WebSockets mein server khud persistent connection par client ko naya data push kar sakta hai (real-time). Mobile apps JSON mangte hain.</div>
+    <div class="ans-item"><b>24.</b> Switch same LAN ke andar devices ko connect karta hai; Router alag-alag networks ko aapas mein aur internet se connect karta hai. Wireless switch = Access Point.</div>
+    <div class="ans-item"><b>25.</b> Single point of failure avoid karna, cable length impractical hona, aur load balancing — isliye distributed routers. Continents ke darmiyan undersea fiber-optic cables se traffic jata hai.</div>
+    <div class="ans-item"><b>26.</b> Tunneling: original packet encrypt karke doosre packet ke andar "pack" kar diya jata hai (letter ko envelope mein daalne jaisa) taake public internet par safe rahe. Private WAN zyada secure lekin costly; Public WAN (VPN) kam secure nahi (encryption ki wajah se acha) aur sasta/common.</div>
+    <div class="ans-item"><b>27.</b> Local ISP = mohalla level, Regional = country ke cities connect karta hai, Global = countries/continents (undersea cables). Peering = bari companies ka Local ISP ke sath direct connection, taake poori hierarchy se guzarne ki bajaye traffic seedha pohanche.</div>
+    <div class="ans-item"><b>28.</b> Raw Bytes → Character Encoding → Tokenization → Object Creation → DOM Construction. JS DOM/CSS ko modify kar sakti hai isliye browser pehle JS process karta hai jo rendering rok deta hai — solution: async/defer attributes se JS ko end mein/asynchronously load karna.</div>
+
+    <div class="ans-part-title">Part 3</div>
+    <div class="ans-item"><b>29.</b> TCP reliable hai (order + delivery guarantee, resend on loss), UDP fast hai lekin reliability guarantee nahi karta. Socket = IP address + Port number. Port 80 = HTTP, Port 443 = HTTPS.</div>
+    <div class="ans-item"><b>30.</b> Certificate = server ki identity prove karta hai (CA se signed); Handshake = encryption algorithm aur connection security decide karna; Encryption = actual data ka secure transmission. CA ek trusted third-party hai jo certificate sign karti hai.</div>
+    <div class="ans-item"><b>31.</b> Persistent connections har request ke liye naya TCP connection kholne ka overhead khatam karti hain. HTTP/0.9 mein sirf GET tha, koi headers/status codes nahi thay. Head-of-line blocking: ek connection par ek waqt sirf ek request outstanding ho sakti thi, slow request baaki ko rok deti thi.</div>
+    <div class="ans-item"><b>32.</b> SPDY ka idea: bandwidth badhane ka fayda plateau ho jata hai, lekin latency kam karna hamesha performance behtar karta hai. Multiplexing head-of-line blocking khatam karti hai — ek hi connection par multiple requests parallel chal sakti hain. True.</div>
+    <div class="ans-item"><b>33.</b> Recursor = librarian jo poori book dhoondta hai; Root = index batata hai kaunse rack (TLD) par jana hai; TLD = specific rack (.com); Authoritative = final dictionary jo asal IP deta hai. 8 steps: browser→resolver→root→TLD→authoritative→IP wapis→browser ko IP milta hai→HTTP request bhejta hai.</div>
+    <div class="ans-item"><b>34.</b> Recursive query: server se poora record dhoond kar dene ki maang; Iterative: server best jawab ya agle server ka reference deta hai, client khud agla step karta hai. Caching 3 levels: Browser cache, OS-level cache, ISP resolver cache. TTL = Time To Live.</div>
+  </details>
+
+  <p class="footer-note">Draft Academy · Reinforcement Question Paper · Based on "HTML Ki Poori Guide" complete course notes</p>
+
+</div>
+</body>
+</html>
