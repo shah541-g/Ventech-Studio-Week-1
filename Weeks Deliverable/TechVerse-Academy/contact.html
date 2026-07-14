@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+        <!-- If you want to view this page along with styling the uncomment the following line -->
+         <link rel="stylesheet" href="css/contact.css">
   </head>
   <body>
     <header>
@@ -21,7 +23,33 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <form action="">
+    <fieldset>
+    <legend>Contact Form</legend>
+    <label for="fullName">Full Name:</label>
+    <input type="text" pattern="[A-Za-z]*" required id="fullName">
+    <label for="email">Email Address:</label>
+    <input type="email" required id="email">
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="tel" name="" id="phoneNumber" pattern="[0-9]{11}" required>
+    <label for="subject">Subject:</label>
+    <select name="" id="subject">
+      <option value="Software Engineering">Software Engineering</option>
+      <option value="Computer Science">Computer Science</option>
+    </select>
+    <label for="message">Message:</label>
+    <textarea name="" id="message" cols="5" rows="5" maxlength="300" placeholder="Write your message here"></textarea>
+    <label>Gender:</label>
+    <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="Female"> <label for="female">Female</label>
+    <label for="subscribe">Subscribe to newsletter:</label>
+    <input type="checkbox" name="" id="subscribe"> <span>Yes, I would like to recieve updates</span>
+    <button>Submit</button>
+    </fieldset>
+    
+  </form>
+    </main>
     <footer>&copy; 2026; all rights reserved</footer>
   </body>
 </html>

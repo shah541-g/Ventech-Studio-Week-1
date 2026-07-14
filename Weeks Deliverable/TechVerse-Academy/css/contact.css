@@ -1,0 +1,197 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #1f2937;
+  line-height: 1.6;
+  background-color: #f9fafb;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 5%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+header nav a {
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+header nav a:hover {
+  color: #4f46e5;
+}
+
+/* ===== Contact Form ===== */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 5%;
+}
+
+form {
+  width: 100%;
+  max-width: 560px;
+}
+
+fieldset {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+legend {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
+  padding: 0 0.5rem;
+}
+
+/* Default: every direct child of fieldset is a full-width block with spacing below it */
+fieldset > * {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.1rem;
+}
+
+fieldset > label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.4rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Gender radios: input + its bare-word label sit inline, side by side */
+input[type="radio"] {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  accent-color: #4f46e5;
+  margin: 0 0.4rem 0 0;
+}
+
+label[for="male"],
+label[for="female"] {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  font-weight: 400;
+  margin: 0 1.5rem 0 0;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+label[for="female"] {
+  margin-right: 0;
+}
+
+/* Newsletter checkbox + its text sit inline, side by side */
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  accent-color: #4f46e5;
+  margin: 0 0.5rem 0 0;
+}
+
+fieldset > span {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Submit button */
+button {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #111827;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
