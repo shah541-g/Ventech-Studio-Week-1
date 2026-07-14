@@ -4,10 +4,11 @@ This repository contains all notes and practice source code of **Week 1** from m
 
 ## 📌 About
 
-This repo is created to document my Week 1 learning journey, including:
+This repo documents my Week 1 learning journey and includes:
 - Notes from daily internship learning
 - Practice code examples
 - Basic implementation tasks
+- Hands-on mini projects and UI practice
 
 ## 🛠 Tech Stack
 
@@ -16,8 +17,16 @@ This repo is created to document my Week 1 learning journey, including:
 
 ## 📊 Language Composition
 
-- HTML: 88.5%
-- CSS: 11.5%
+- HTML: 72.6%
+- CSS: 27.4%
+
+## ✅ Week 1 Additions (from Git History)
+
+Recent updates in this repository include:
+- Added and refined multiple HTML practice files
+- Added CSS styling practice and layout exercises
+- Improved structure and formatting across files
+- Continued daily commits to track progress
 
 ## 🎯 Purpose
 
@@ -25,6 +34,7 @@ The purpose of this repository is to:
 - Track my weekly internship progress
 - Maintain structured learning notes
 - Store and review practice source code
+- Build a consistent habit of version-controlled learning
 
 ## 👨‍💻 Internship Context
 
