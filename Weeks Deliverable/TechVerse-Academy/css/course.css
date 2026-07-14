@@ -211,6 +211,23 @@ article > h2 {
   font-weight: 500;
 }
 
+.course-card > a {
+  display: block;
+  text-align: center;
+  margin: 0 1.25rem 1.25rem;
+  padding: 0.6rem;
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.course-card > a:hover {
+  background-color: #4338ca;
+}
+
 /* ===== Footer ===== */
 footer {
   text-align: center;
